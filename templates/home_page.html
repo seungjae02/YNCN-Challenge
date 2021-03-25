@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+<html>
+<head>
+	<title> Bonus Task! </title>
+</head>
+<body>
+
+<form class="form" action="/filter" method="get">
+      <div class="field">
+            <select name="title">
+   			 	<option value="All Courses" selected>All Courses</option>
+				{% for course in coursesJSON %}
+                  <option value="{{course['name']}}" name="title">{{course['name']}}</option>
+				{% endfor %}
+            </select>
+		  <button class="ui blue button" type="submit">Search</button>
+		</div>
+  </form>
+
+	{% for course in coursesList %}
+		<div class="course_name"> {{"".join(course.keys())}} </div>
+		<div class="course_prof"> Professor: {{course.get("".join(course.keys()))[0]}} </div>
+		<div class="course_prof"> Enrolled Students: {{", ".join(course.get("".join(course.keys()))[1:])}} </div>
+
+	{% endfor %}
+
+</body>
+</html>

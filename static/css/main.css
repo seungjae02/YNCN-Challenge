@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #444;
+}
+
+.course_name {
+  font-size: 2em;
+  margin-top: 40px;
+  text-align: left;
+  letter-spacing: -2px;
+}
+
+.course_prof{
+  font-size: 1.7em;
+  font-weight: 100;
+  margin-top: 30px;
+  text-align: left;
+  letter-spacing: -1px;
+  color: #999;
+}
+
+.course_students{
+  font-size: 1.3em;
+  font-weight: 100;
+  margin-top: 30px;
+  text-align: left;
+  letter-spacing: -1px;
+  color: #999;
+}
